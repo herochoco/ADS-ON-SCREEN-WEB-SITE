@@ -21,20 +21,23 @@ nav a {
 }
 
 header {
-    background: #4CAF50;
-    color: #fff;
-    padding: 10px 0;
+    background: url('images/Gbrologo.jpg') no-repeat center center fixed; /* Fixed position */
+    background-size: cover; /* Ensure the image covers the entire header area */
+    color: #000000;
+    padding: 100px 0; /* Adjust padding to ensure space for text */
     text-align: center;
+    position: relative; /* Allows positioning of text over the image */
+    height: 200px; /* Adjust the height as needed */
 }
 
 header h1 {
-    margin: 0;
+    margin: 2;
     font-size: 2.5em;
 }
 
 header p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 section {
@@ -139,26 +142,52 @@ form button:hover {
     transform: scale(1.05); /* Slightly larger on hover */
 }
 #our-identity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 20px;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    text-align: left;
 }
 
-#our-identity h2 {
+.identity-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.identity-text {
+    flex: 1;
+    padding-right: 20px; /* Space between text and image */
+}
+
+.identity-text h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-#our-identity p {
+.identity-text p {
     font-size: 1.1em;
     margin-bottom: 10px;
 }
-#our-identity strong {
+
+.identity-text strong {
     color: #4CAF50; /* Green color to match your header */
     font-weight: bold;
 }
+
+.identity-image {
+    flex: 1;
+}
+
+.identity-image img {
+    width: 100%; /* Make sure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
 #contact {
     text-align: center;
 }
