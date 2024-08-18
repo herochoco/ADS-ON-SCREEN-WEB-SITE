@@ -32,20 +32,37 @@
             </div>
         </div>
     </section>
-    
-    
-
-    <section id="portfolio">
-        <h1><strong>Our Portfolio</strong></h1>
-        <div class="portfolio-item">
-            <video src="videos/GB.mp4" autoplay loop muted></video>
+    <!-- New Section "Our Capabilities" -->
+<section id="our-capabilities">
+    <div class="capabilities-content">
+        <div class="capabilities-image">
+            <img src="images/ourcaps3.png" alt="Our Capabilities Image">
         </div>
-        <div class="portfolio-item">
-            <video src="videos/GB@.mp4" autoplay loop muted></video>
+        <div class="capabilities-text">
+            <h2>Our Capabilities</h2>
+            <p>At <strong>AD ON SCREEN</strong>, we specialize in delivering dynamic and impactful digital advertising solutions. Our capabilities extend across a range of services designed to enhance visibility and engagement for your brand.</p>
+            <p>We have screens strategically placed in top locations, including malls, supermarkets, stores, and other crowded areas with high foot traffic. This prime placement ensures that your advertisements reach a broad and diverse audience.</p>
+            <p>From vibrant displays for special campaigns to consistent advertising presence, our advanced technology and strategic positioning maximize the impact of your messages. Discover how our expertise in digital advertising can elevate your brand and connect you with more customers.</p>
+        </div>
+    </div>
+</section>
+    
+    <section id="portfolio">
+        <div class="portfolio-section">
+            <h2 class="portfolio-title">Our Portfolio</h2>
+            <div class="portfolio-videos">
+                <div class="portfolio-item">
+                    <video src="videos/GB.mp4" autoplay loop muted></video>
+                </div>
+                <div class="portfolio-item">
+                    <video src="videos/GB@.mp4" autoplay loop muted></video>
+                </div>
+            </div>
         </div>
     </section>
+    
 
-    <section id="contact">
+    <section id="bookappointment">
         <h2>Book an Appointment</h2>
         <button id="bookAppointmentBtn" class="book-now-btn">Book Now</button>
 
@@ -95,7 +112,23 @@
             </form>
     </section>
 
-    <section id="contact">
+    <section id="map-location" style="padding: 20px;">
+        <h2>Our Location</h2>
+        <div style="width: 100%; height: 400px;">
+            <!-- Replace the src attribute value with your Google Maps embed code -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231.07883619717705!2d78.4441086711466!3d17.445546096916825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c3aea363eb%3A0xa44d9677ba3ab8cd!2s7-1-308%2FA%2F7%2F7A%2C%20Vengal%20Rao%20Nagar%2C%20Sanjeeva%20Reddy%20Nagar%2C%20Hyderabad%2C%20Telangana%20500038!5e1!3m2!1sen!2sin!4v1723991876141!5m2!1sen!2sin"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    
+    <section id="contact-us">
         <div style="display: flex; justify-content: space-between; align-items: flex-start;">
             <div style="flex: 1; padding-right: 20px;">
                 <h2>Contact Us</h2>
@@ -126,5 +159,11 @@
             }
         });
     </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 AD ON SCREEN. All rights reserved.</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
